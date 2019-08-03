@@ -1,0 +1,26 @@
+SSR:
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/shadowsocksR.sh
+chmod +x shadowsocksR.sh
+./shadowsocksR.sh 2>&1 | tee shadowsocksR
+
+V2Ray:
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/multi-v2ray.sh
+chmod +x multi-v2ray.sh
+./multi-v2ray.sh
+
+Wireguard:
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/wireguard.sh
+chmod +x wireguard.sh
+./wireguard.sh
+
+BBR:
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/tcpBBR.sh
+chmod +x tcpBBR.sh
+./tcpBBR.sh
+
+udp2raw:
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/wireguard_udp2raw.sh
+chmod +x wireguard_udp2raw.sh
+./wireguard_udp2raw.sh
+
+
