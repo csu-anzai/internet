@@ -9,6 +9,10 @@ chmod +x multi-v2ray.sh
 ./multi-v2ray.sh
 
 Wireguard:
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/centos7_wireguard_udpspeeder_udp2raw.sh
+chmod +x centos7_wireguard_udpspeeder_udp2raw.sh
+./centos7_wireguard_udpspeeder_udp2raw.sh
+或者
 wget https://raw.githubusercontent.com/AmuyangA/internet/master/wireguard.sh
 chmod +x wireguard.sh
 ./wireguard.sh
@@ -22,5 +26,3 @@ udp2raw:
 wget https://raw.githubusercontent.com/AmuyangA/internet/master/wireguard_udp2raw.sh
 chmod +x wireguard_udp2raw.sh
 ./wireguard_udp2raw.sh
-
-
