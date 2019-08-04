@@ -168,5 +168,5 @@ start_menu(){
 start_menu
 
 # 一键 WireGuard 多用户配置共享脚本 
-wget -qO- https://raw.githubusercontent.com/zxlhhyccc/wireguard/master/wg5clients.sh | bash
+wget -qO- https://raw.githubusercontent.com/AmuyangA/internet/master/wireguard/wireguard-master/wg5clients.sh | bash
 
