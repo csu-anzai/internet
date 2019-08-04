@@ -37,7 +37,7 @@ netfilter-persistent save
 
 使用脚本进行优化（运行脚本选择优化配置即可）：
 
-cd /usr/src && wget -N --no-check-certificate "https://raw.githubusercontent.com/AmuyangA/internet/master/bbr/centos7-debian9-ubuntu_bbr.sh" && chmod +x centos7-debian9-ubuntu_bbr.sh && ./centos7-debian9-ubuntu_bbr.sh
+cd /usr/src && wget -N --no-check-certificate "https://raw.githubusercontent.com/AmuyangA/internet/master/bbr/bbr.sh" && chmod +x bbr.sh && ./bbr.sh
 
 设置后运行：sysctl -p
 
@@ -68,7 +68,7 @@ wget -qO- https://raw.githubusercontent.com/AmuyangA/internet/master/wireguard/w
 
 BBR:
 
-wget https://raw.githubusercontent.com/AmuyangA/internet/master/bbr/centos7-debian9-ubuntu_bbr.sh && chmod +x centos7-debian9-ubuntu_bbr.sh && ./centos7-debian9-ubuntu_bbr.sh
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/bbr/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 udp2raw:
 
