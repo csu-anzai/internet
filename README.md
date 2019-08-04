@@ -1,15 +1,11 @@
 # internet
 SSR:
 
-wget https://raw.githubusercontent.com/AmuyangA/internet/master/shadowsocksR.sh
-chmod +x shadowsocksR.sh
-./shadowsocksR.sh 2>&1 | tee shadowsocksR
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/shadowsocksR.sh && chmod +x shadowsocksR.sh && ./shadowsocksR.sh 2>&1 | tee shadowsocksR
 
 V2Ray:
 
-wget https://raw.githubusercontent.com/AmuyangA/internet/master/multi-v2ray.sh
-chmod +x multi-v2ray.sh
-./multi-v2ray.sh
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/multi-v2ray.sh && chmod +x multi-v2ray.sh && ./multi-v2ray.sh
 
 Wireguard:
 
@@ -72,12 +68,8 @@ wget -qO- https://raw.githubusercontent.com/AmuyangA/internet/master/wireguard/w
 
 BBR:
 
-wget https://raw.githubusercontent.com/AmuyangA/internet/master/bbr/centos7-debian9-ubuntu_bbr.sh
-chmod +x centos7-debian9-ubuntu_bbr.sh
-./centos7-debian9-ubuntu_bbr.sh
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/bbr/centos7-debian9-ubuntu_bbr.sh && chmod +x centos7-debian9-ubuntu_bbr.sh && ./centos7-debian9-ubuntu_bbr.sh
 
 udp2raw:
 
-wget https://raw.githubusercontent.com/AmuyangA/internet/master/wireguard/wg%2Budp2raw/wireguard_udp2raw.sh
-chmod +x wireguard_udp2raw.sh
-./wireguard_udp2raw.sh
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/wireguard/wg%2Budp2raw/wireguard_udp2raw.sh && chmod +x wireguard_udp2raw.sh && ./wireguard_udp2raw.sh
