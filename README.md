@@ -1,4 +1,7 @@
 # internet
+修改SSH端口:
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/sshport.sh && chmod +x sshport.sh && ./sshport.sh
+
 SSR:
 
 wget https://raw.githubusercontent.com/AmuyangA/internet/master/shadowsocksR.sh && chmod +x shadowsocksR.sh && ./shadowsocksR.sh 2>&1 | tee shadowsocksR
