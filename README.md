@@ -1,4 +1,7 @@
-# internet
+## CentOS装wget
+
+yum install wget
+
 ## 修改SSH端口:
 
 wget https://raw.githubusercontent.com/AmuyangA/internet/master/sshport.sh && chmod +x sshport.sh && ./sshport.sh
