@@ -4,7 +4,7 @@ yum install wget
 
 ## 修改SSH端口:
 
-wget https://github.com/AmuyangA/internet/blob/master/ssh/sshport.sh && chmod +x sshport.sh && ./sshport.sh
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/ssh/sshport.sh && chmod +x sshport.sh && ./sshport.sh
 
 ## SSR:
 
