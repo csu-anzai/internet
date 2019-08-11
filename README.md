@@ -12,7 +12,7 @@ wget https://raw.githubusercontent.com/AmuyangA/internet/master/shadowsocksR.sh 
 
 ## V2Ray:
 
-wget https://raw.githubusercontent.com/AmuyangA/internet/master/multi-v2ray.sh && chmod +x multi-v2ray.sh && ./multi-v2ray.sh
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/v2ray/multi-v2ray.sh && chmod +x multi-v2ray.sh && ./multi-v2ray.sh
 
 ## Wireguard:
 
