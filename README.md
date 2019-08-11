@@ -8,7 +8,7 @@ wget https://raw.githubusercontent.com/AmuyangA/internet/master/sshport.sh && ch
 
 ## SSR:
 
-wget https://raw.githubusercontent.com/AmuyangA/internet/master/shadowsocksR.sh && chmod +x shadowsocksR.sh && ./shadowsocksR.sh 2>&1 | tee shadowsocksR
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/ssr/shadowsocksR.sh && chmod +x shadowsocksR.sh && ./shadowsocksR.sh 2>&1 | tee shadowsocksR
 
 ## V2Ray:
 
