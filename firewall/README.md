@@ -1,2 +1,2 @@
 # Debian
-# CentOS系统
+# CentOS
