@@ -26,6 +26,7 @@ vi /etc/shadowsocks.json
 
 ### 多用户配置
 {
+
     "server":"0.0.0.0",
     
     "server_ipv6":"[::]",  
@@ -59,6 +60,7 @@ vi /etc/shadowsocks.json
     "fast_open":true,
     
     "workers":1
+    
 }
 
 ### 按 ESC 键退出编辑
