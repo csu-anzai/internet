@@ -72,7 +72,17 @@ source <(curl -sL https://git.io/fNgqx) -k
 source <(curl -sL https://git.io/fNgqx) --remove
 
 ## 九：防火墙：
+
 Debian:
-确定你已经安装Iptables：whereis iptables
-安装Iptables：sudo apt-get install iptables
-查看Iptables配置信息：sudo iptables -L
+
+### 确定你已经安装Iptables：
+
+whereis iptables
+
+### 安装Iptables：
+
+sudo apt-get install iptables
+
+### 查看Iptables配置信息：
+
+sudo iptables -L
