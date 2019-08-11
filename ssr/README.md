@@ -26,8 +26,12 @@ vi /etc/shadowsocks.json
 
 ### 多用户配置
 {
+{
+
     "server":"0.0.0.0",
+    
     "server_ipv6":"[::]",  
+    
     "local_address":"127.0.0.1",
     
     "local_port":1080,
@@ -57,6 +61,7 @@ vi /etc/shadowsocks.json
     "fast_open":true,
     
     "workers":1
+}
     
 }
 
