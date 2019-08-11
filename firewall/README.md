@@ -22,6 +22,10 @@ iptables -L -n
 
 ## 移除防火墙：
 
+iptables -I INPUT -p tcp --dport 端口号 -j DROP
+
+iptables -I INPUT -p udp --dport 端口号 -j DROP
+
 ## 查看端口号是否开启，运行命令：
 
 # CentOS
