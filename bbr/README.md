@@ -1,6 +1,10 @@
+## 安装
+
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/bbr/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+
 ## 执行脚本
 
-./tcp.sh
+./bbr.sh
 
 ## 升级脚本
 
