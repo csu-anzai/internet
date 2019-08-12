@@ -27,3 +27,7 @@ wget https://raw.githubusercontent.com/AmuyangA/internet/master/bbr/bbr.sh && ch
 ## udp2raw:
 
 wget https://raw.githubusercontent.com/AmuyangA/internet/master/wireguard/wg%2Budp2raw/wireguard_udp2raw.sh && chmod +x wireguard_udp2raw.sh && ./wireguard_udp2raw.sh
+
+## 宝塔面板
+
+https://www.bt.cn/btcode.html
