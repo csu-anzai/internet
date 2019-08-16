@@ -36,4 +36,4 @@ https://www.bt.cn/btcode.html
 
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/AmuyangA/internet/master/bench/ibench.sh | bash
 
-wget -qO- --no-check-certificate https://raw.githubusercontent.com/AmuyangA/internet/master/bench/pbench.sh | bash
+wget -qO- --no-check-certificate https://raw.githubusercontent.com/AmuyangA/internet/master/bench/cbench.sh | bash
