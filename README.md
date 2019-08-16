@@ -31,3 +31,7 @@ wget https://raw.githubusercontent.com/AmuyangA/internet/master/wireguard/wg%2Bu
 ## 宝塔面板
 
 https://www.bt.cn/btcode.html
+
+## 服务器性能测试
+
+wget -qO- --no-check-certificate https://raw.githubusercontent.com/AmuyangA/internet/master/bench/ibench.sh | bash
