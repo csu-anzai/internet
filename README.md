@@ -35,3 +35,5 @@ https://www.bt.cn/btcode.html
 ## 服务器性能测试
 
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/AmuyangA/internet/master/bench/ibench.sh | bash
+
+wget -qO- --no-check-certificate https://raw.githubusercontent.com/AmuyangA/internet/master/bench/pbench.sh | bash
