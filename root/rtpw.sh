@@ -10,8 +10,8 @@ export PATH
 #	Project: https://github.com/AmuyangA/
 #=================================================
 
-sh_ver="1.1.9"
-github="raw.githubusercontent.com/zxlhhyccc/-BBR-/master"
+sh_ver="1.0"
+github="raw.githubusercontent.com/AmuyangA/root/master"
 
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
 Info="${Green_font_prefix}[信息]${Font_color_suffix}"
@@ -63,7 +63,7 @@ case "$num" in
 	;;
 	*)
 	clear
-	echo -e "${Error}:请输入正确数字 [0-15]"
+	echo -e "${Error}:请输入正确数字 [1-2]"
 	sleep 5s
 	start_menu
 	;;
