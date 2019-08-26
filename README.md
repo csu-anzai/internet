@@ -41,3 +41,13 @@ https://www.bt.cn/btcode.html
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/AmuyangA/internet/master/bench/ibench.sh | bash
 
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/AmuyangA/internet/master/bench/cbench.sh | bash
+
+##  删除文件
+
+删除/opt/目录下的svn文件夹，将会删除/opt/svn/目录以及其下所有文件夹，包括文件：
+
+rm -rf /opt/svn
+
+删除特定文件，将/opt/目录下的test.txt文件删除：
+
+rm -f /opt/test.txt
