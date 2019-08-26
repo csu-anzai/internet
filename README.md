@@ -4,9 +4,7 @@ yum install wget
 
 ## 设置更改root用户登录密码
 
-sudo su
-
-wget -qO- --no-check-certificate https://raw.githubusercontent.com/AmuyangA/internet/master/root/rtpw.sh | bash
+sudo su && wget https://raw.githubusercontent.com/AmuyangA/internet/master/root/rtpw.sh && chmod +x rtpw.sh && ./rtpw.sh
 
 ## 修改SSH端口:
 
