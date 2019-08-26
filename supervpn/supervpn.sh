@@ -3439,7 +3439,7 @@ start_menu_main(){
 	echo && echo -e " 超级VPN 一键设置脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
 	  -- 胖波比 --
 	  
-————————————VPN搭建————————————
+—————————————VPN搭建——————————————
  ${Green_font_prefix}1.${Font_color_suffix} 安装 V2Ray
  ${Green_font_prefix}2.${Font_color_suffix} 安装 SSR
  ${Green_font_prefix}3.${Font_color_suffix} 安装 BBR/Lotserver(锐速)内核
@@ -3449,12 +3449,12 @@ start_menu_main(){
  ${Green_font_prefix}6.${Font_color_suffix} 设置root用户密码
  ${Green_font_prefix}7.${Font_color_suffix} 重装VPS系统
  ${Green_font_prefix}8.${Font_color_suffix} 系统性能测试
-————————————杂项管理————————————
+————————————退出脚本——————————————
  ${Green_font_prefix}9.${Font_color_suffix} 退出脚本
-————————————————————————————————" && echo
+—————————————————————————————————" && echo
 
 	echo
-	read -p " 请输入数字 [1-10]:" num
+	read -p " 请输入数字 [1-9]:" num
 	case "$num" in
 		1)
 		install_v2ray
@@ -3485,7 +3485,7 @@ start_menu_main(){
 		;;
 		*)
 		clear
-		echo -e "${Error}:请输入正确数字 [1-10]"
+		echo -e "${Error}:请输入正确数字 [1-9]"
 		sleep 5s
 		start_menu_main
 		;;
