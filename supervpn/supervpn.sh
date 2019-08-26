@@ -1,13 +1,13 @@
-﻿#!/usr/bin/env bash
+#!/usr/bin/env bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
 #==========================================================
-#	超级VPN一键设置脚本
-#	Description: V2Ray+SSR+BBR+Lotserver+SSH+Root+VPS+Nginx
-#	Version: 1.0
-#	Author: 胖波比
-#	Project: https://github.com/AmuyangA/
+#   超级VPN一键设置脚本
+#   Description: V2Ray+SSR+BBR+Lotserver+SSH+Root+VPS+Nginx
+#   Version: 1.0
+#   Author: 胖波比
+#   Project: https://github.com/AmuyangA/
 #==========================================================
 
 sh_ver="1.0"
