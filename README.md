@@ -51,3 +51,7 @@ rm -rf /opt/svn
 删除特定文件，将/opt/目录下的test.txt文件删除：
 
 rm -f /opt/test.txt
+
+## 超级VPN一键设置脚本，集成V2Ray，SSR，BBR，Lotserver，SSH端口修改，Root用户改密，VPS系统重装，Nginx
+
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/supervpn/supervpn.sh && chmod +x supervpn.sh && ./supervpn.sh
