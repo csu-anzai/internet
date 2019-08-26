@@ -18,6 +18,65 @@ Info="${Green_font_prefix}[信息]${Font_color_suffix}"
 Error="${Red_font_prefix}[错误]${Font_color_suffix}"
 Tip="${Green_font_prefix}[注意]${Font_color_suffix}"
 
+#开始菜单
+start_menu_main(){
+	clear
+	echo && echo -e " 超级VPN 一键设置脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
+	  -- 胖波比 --
+	  
+	————————————VPN搭建————————————
+	 ${Green_font_prefix}1.${Font_color_suffix} 安装 V2Ray
+	 ${Green_font_prefix}2.${Font_color_suffix} 安装 SSR
+	 ${Green_font_prefix}3.${Font_color_suffix} 安装 BBR/Lotserver(锐速)内核
+	 ${Green_font_prefix}4.${Font_color_suffix} 安装 Nginx
+	————————————服务器设置————————————
+	 ${Green_font_prefix}5.${Font_color_suffix} 设置SSH端口
+	 ${Green_font_prefix}6.${Font_color_suffix} 设置root用户密码
+	 ${Green_font_prefix}7.${Font_color_suffix} 重装VPS系统
+	 ${Green_font_prefix}8.${Font_color_suffix} 系统性能测试
+	————————————杂项管理————————————
+	 ${Green_font_prefix}9.${Font_color_suffix} 退出脚本
+	————————————————————————————————" && echo
+
+	echo
+	read -p " 请输入数字 [1-10]:" num
+	case "$num" in
+		1)
+		install_v2ray
+		;;
+		2)
+		install_ssr
+		;;
+		3)
+		install_bbr
+		;;
+		4)
+		install_nginx
+		;;
+		5)
+		set_ssh
+		;;
+		6)
+		set_root
+		;;
+		7)
+		reinstall_sys
+		;;
+		8)
+		test_sys
+		;;
+		9)
+		exit 1
+		;;
+		*)
+		clear
+		echo -e "${Error}:请输入正确数字 [1-10]"
+		sleep 5s
+		start_menu_main
+		;;
+	esac
+}
+
 #安装V2ray
 install_v2ray(){
 	#!/bin/bash
@@ -3430,62 +3489,3 @@ EOF
                  rm -rf add nginx_signing.key >/dev/null 2>&1
 	 fi
  }
-
-#开始菜单
-start_menu_main(){
-	clear
-	echo && echo -e " 超级VPN 一键设置脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
-	  -- 胖波比 --
-	  
-	————————————VPN搭建————————————
-	 ${Green_font_prefix}1.${Font_color_suffix} 安装 V2Ray
-	 ${Green_font_prefix}2.${Font_color_suffix} 安装 SSR
-	 ${Green_font_prefix}3.${Font_color_suffix} 安装 BBR/Lotserver(锐速)内核
-	 ${Green_font_prefix}4.${Font_color_suffix} 安装 Nginx
-	————————————服务器设置————————————
-	 ${Green_font_prefix}5.${Font_color_suffix} 设置SSH端口
-	 ${Green_font_prefix}6.${Font_color_suffix} 设置root用户密码
-	 ${Green_font_prefix}7.${Font_color_suffix} 重装VPS系统
-	 ${Green_font_prefix}8.${Font_color_suffix} 系统性能测试
-	————————————杂项管理————————————
-	 ${Green_font_prefix}9.${Font_color_suffix} 退出脚本
-	————————————————————————————————" && echo
-
-	echo
-	read -p " 请输入数字 [1-10]:" num
-	case "$num" in
-		1)
-		install_v2ray
-		;;
-		2)
-		install_ssr
-		;;
-		3)
-		install_bbr
-		;;
-		4)
-		install_nginx
-		;;
-		5)
-		set_ssh
-		;;
-		6)
-		set_root
-		;;
-		7)
-		reinstall_sys
-		;;
-		8)
-		test_sys
-		;;
-		9)
-		exit 1
-		;;
-		*)
-		clear
-		echo -e "${Error}:请输入正确数字 [1-10]"
-		sleep 5s
-		start_menu_main
-		;;
-	esac
-}
