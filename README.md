@@ -10,7 +10,7 @@ sudo apt-get install wget
 
 ### 可能需要装
 
-ca-certificates python3-pip make
+ca-certificates python3-pip make curl
 
 #### 修复
 
