@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env bash
+#!/usr/bin/env bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
@@ -1562,7 +1562,7 @@ set_ssh(){
 
 	#开启SSH防火墙
 	if [[ "${release}" == "centos" ]]; then
-		if [[ ${version} == "6" ]]; then
+		if [[ ${version} <= "6" ]]; then
 				iptables -I INPUT -p tcp --dport $SSH_PORT -j ACCEPT
 				iptables -I INPUT -p udp --dport $SSH_PORT -j ACCEPT
 		elif [[ ${version} == "7" ]]; then
