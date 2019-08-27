@@ -8,6 +8,10 @@ Debian/Ubuntu
 
 sudo apt-get install wget
 
+### 可能需要装ca-certificates
+
+install ca-certificates
+
 ## 设置更改root用户登录密码
 
 sudo su && wget https://raw.githubusercontent.com/AmuyangA/internet/master/root/rtpw.sh && chmod +x rtpw.sh && ./rtpw.sh
