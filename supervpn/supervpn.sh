@@ -1565,27 +1565,22 @@ set_ssh(){
 		if [[ ${version} == "6" ]]; then
 				iptables -I INPUT -p tcp --dport $SSH_PORT -j ACCEPT
 				iptables -I INPUT -p udp --dport $SSH_PORT -j ACCEPT
-				iptables -I INPUT -p tcp --dport $ssh_port -j DROP
                 iptables -I INPUT -p udp --dport $ssh_port -j DROP
 		elif [[ ${version} == "7" ]]; then
 				firewall-cmd --zone=public --add-port=$SSH_PORT/tcp --permanent
 				firewall-cmd --zone=public --add-port=$SSH_PORT/udp --permanent
-				firewall-cmd --zone=public --remove-port=$ssh_port/tcp --permanent
-				firewall-cmd --zone=public --remove-port=$ssh_port/udp --permanent
 				firewall-cmd --reload
 		else
-			echo -e "${Error} SSH 脚本不支持当前系统 ${release} ${version} ${bit} !" && exit 1
+			echo -e "${Error} SSH 脚本不支持当前系统 ${release} ${version} !" && exit 1
 		fi
 		service sshd restart
 	elif [[ "${release}" == "debian" ]]; then
 		iptables -I INPUT -p tcp --dport $SSH_PORT -j ACCEPT
 		iptables -I INPUT -p udp --dport $SSH_PORT -j ACCEPT
-		iptables -I INPUT -p tcp --dport $ssh_port -j DROP
         iptables -I INPUT -p udp --dport $ssh_port -j DROP
 		service ssh restart
 	elif [[ "${release}" == "ubuntu" ]]; then
 		sudo ufw allow $SSH_PORT
-		sudo ufw delete allow $ssh_port
 		service ssh restart
 	else
 		echo -e "${Error} SSH一键修改脚本不支持当前系统 ${release} ${version} !" && exit 1
