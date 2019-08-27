@@ -1565,7 +1565,6 @@ set_ssh(){
 		if [[ ${version} == "6" ]]; then
 				iptables -I INPUT -p tcp --dport $SSH_PORT -j ACCEPT
 				iptables -I INPUT -p udp --dport $SSH_PORT -j ACCEPT
-                iptables -I INPUT -p udp --dport $ssh_port -j DROP
 		elif [[ ${version} == "7" ]]; then
 				firewall-cmd --zone=public --add-port=$SSH_PORT/tcp --permanent
 				firewall-cmd --zone=public --add-port=$SSH_PORT/udp --permanent
@@ -1577,7 +1576,6 @@ set_ssh(){
 	elif [[ "${release}" == "debian" ]]; then
 		iptables -I INPUT -p tcp --dport $SSH_PORT -j ACCEPT
 		iptables -I INPUT -p udp --dport $SSH_PORT -j ACCEPT
-        iptables -I INPUT -p udp --dport $ssh_port -j DROP
 		service ssh restart
 	elif [[ "${release}" == "ubuntu" ]]; then
 		sudo ufw allow $SSH_PORT
@@ -1756,7 +1754,7 @@ reinstall_sys(){
 		  
 ————————————版本选择————————————"
 		echo
-		read -p " 请输入版本号 [7-10]:" num_a
+		read -p " 请输入版本号 [16-18]:" num_a
 		read -p " 请输入版本号 [32/64]:" num_b
 		
 		bash InstallNET.sh -u $num_a -v $num_b -a
