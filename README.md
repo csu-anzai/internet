@@ -10,7 +10,7 @@ sudo apt-get install wget
 
 ### 可能需要装
 
-ca-certificates python3-pip
+ca-certificates python3-pip make
 
 ## 设置更改root用户登录密码
 
