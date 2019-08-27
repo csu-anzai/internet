@@ -1,3 +1,14 @@
+## 千影大佬的LNIUXTEST.sh
+
+### 运行（不含UnixBench）
+```
+wget https://raw.githubusercontent.com/chiakge/Linux-Server-Bench-Test/master/linuxtest.sh -N --no-check-certificate && bash linuxtest.sh
+```
+### 运行（含UnixBench）
+```
+wget https://raw.githubusercontent.com/chiakge/Linux-Server-Bench-Test/master/linuxtest.sh -N --no-check-certificate && bash linuxtest.sh a
+```
+
 ## 1、秋水逸冰大佬的ibench.sh脚本
 
 特点：
