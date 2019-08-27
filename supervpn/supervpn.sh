@@ -1572,17 +1572,16 @@ set_ssh(){
 		else
 			echo -e "${Error} SSH 脚本不支持当前系统 ${release} ${version} !" && exit 1
 		fi
-		service sshd restart
 	elif [[ "${release}" == "debian" ]]; then
 		iptables -I INPUT -p tcp --dport $SSH_PORT -j ACCEPT
 		iptables -I INPUT -p udp --dport $SSH_PORT -j ACCEPT
-		service ssh restart
 	elif [[ "${release}" == "ubuntu" ]]; then
 		sudo ufw allow $SSH_PORT
-		service ssh restart
 	else
 		echo -e "${Error} SSH一键修改脚本不支持当前系统 ${release} ${version} !" && exit 1
 	fi
+	service sshd restart
+	service ssh restart
  }
  
 #设置root用户密码
