@@ -8,9 +8,9 @@ Debian/Ubuntu
 
 sudo apt-get install wget
 
-### 可能需要装ca-certificates
+### 可能需要装
 
-install ca-certificates
+ca-certificates python3-pip
 
 ## 设置更改root用户登录密码
 
