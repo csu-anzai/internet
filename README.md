@@ -1,6 +1,12 @@
-## CentOS装wget
+## 装wget
 
-yum install wget
+CentOS:
+
+sudo yum -y install wget
+
+Debian/Ubuntu
+
+sudo apt-get install wget
 
 ## 设置更改root用户登录密码
 
