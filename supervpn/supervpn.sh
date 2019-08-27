@@ -1516,30 +1516,6 @@ install_bbr(){
 
 #设置SSH端口
 set_ssh(){
-	#检查系统
-	if [[ -f /etc/redhat-release ]]; then
-		release="centos"
-	elif cat /etc/issue | grep -q -E -i "debian"; then
-		release="debian"
-	elif cat /etc/issue | grep -q -E -i "ubuntu"; then
-		release="ubuntu"
-	elif cat /etc/issue | grep -q -E -i "centos|red hat|redhat"; then
-		release="centos"
-	elif cat /proc/version | grep -q -E -i "debian"; then
-		release="debian"
-	elif cat /proc/version | grep -q -E -i "ubuntu"; then
-		release="ubuntu"
-	elif cat /proc/version | grep -q -E -i "centos|red hat|redhat"; then
-		release="centos"
-	fi
-
-	#检查Linux版本
-	if [[ -s /etc/redhat-release ]]; then
-		version=`grep -oE  "[0-9.]+" /etc/redhat-release | cut -d . -f 1`
-	else
-		version=`grep -oE  "[0-9.]+" /etc/issue | cut -d . -f 1`
-	fi
-	
 	# Use default SSH port 22. If you use another SSH port on your server
 	if [ -e "/etc/ssh/sshd_config" ];then
 		[ -z "`grep ^Port /etc/ssh/sshd_config`" ] && ssh_port=22 || ssh_port=`grep ^Port /etc/ssh/sshd_config | awk '{print $2}'`
@@ -1561,25 +1537,6 @@ set_ssh(){
 	fi
 
 	#开启SSH防火墙
-	if [[ "${release}" == "centos" ]]; then
-		if [[ ${version} -ge "6" ]]; then
-				iptables -I INPUT -p tcp --dport $SSH_PORT -j ACCEPT
-				iptables -I INPUT -p udp --dport $SSH_PORT -j ACCEPT
-		elif [[ ${version} == "7" ]]; then
-				firewall-cmd --zone=public --add-port=$SSH_PORT/tcp --permanent
-				firewall-cmd --zone=public --add-port=$SSH_PORT/udp --permanent
-				firewall-cmd --reload
-		else
-			echo -e "${Error} SSH 脚本不支持当前系统 ${release} ${version} !" && exit 1
-		fi
-	elif [[ "${release}" == "debian" ]]; then
-		iptables -I INPUT -p tcp --dport $SSH_PORT -j ACCEPT
-		iptables -I INPUT -p udp --dport $SSH_PORT -j ACCEPT
-	elif [[ "${release}" == "ubuntu" ]]; then
-		sudo ufw allow $SSH_PORT
-	else
-		echo -e "${Error} SSH一键修改脚本不支持当前系统 ${release} ${version} !" && exit 1
-	fi
 	service sshd restart
 	service ssh restart
  }
