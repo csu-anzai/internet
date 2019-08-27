@@ -12,6 +12,10 @@ sudo apt-get install wget
 
 ca-certificates python3-pip make
 
+#### 修复
+
+apt --fix-broken install
+
 ## 设置更改root用户登录密码
 
 sudo su && wget https://raw.githubusercontent.com/AmuyangA/internet/master/root/rtpw.sh && chmod +x rtpw.sh && ./rtpw.sh
