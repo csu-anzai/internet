@@ -1,3 +1,5 @@
+wget https://raw.githubusercontent.com/AmuyangA/internet/master/reinstallsys/InstallNET.sh && chmod +x InstallNET.sh && ./InstallNET.sh
+
 ## Usage:
 
         bash InstallNET.sh      -d/--debian [dist-name]
