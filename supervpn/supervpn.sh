@@ -1562,7 +1562,7 @@ set_ssh(){
 
 	#开启SSH防火墙
 	if [[ "${release}" == "centos" ]]; then
-		if [[ ${version} <= "6" ]]; then
+		if [[ ${version} -ge "6" ]]; then
 				iptables -I INPUT -p tcp --dport $SSH_PORT -j ACCEPT
 				iptables -I INPUT -p udp --dport $SSH_PORT -j ACCEPT
 		elif [[ ${version} == "7" ]]; then
@@ -2013,6 +2013,7 @@ test_sys(){
 	#千影大佬的脚本
 	qybench(){
 		clear
+		wget https://raw.githubusercontent.com/AmuyangA/internet/master/bench/linuxtest.sh && chmod +x linuxtest.sh
 		echo && echo -e " 系统性能一键测试综合脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
 		  -- 胖波比 --
 			
@@ -2023,7 +2024,6 @@ test_sys(){
 ————————————————————————————————" && echo
 
 		echo
-		wget https://raw.githubusercontent.com/AmuyangA/internet/master/bench/linuxtest.sh && chmod +x linuxtest.sh
 		read -p " 请输入数字 [1-3]:" num
 		case "$num" in
 			1)
