@@ -1608,11 +1608,11 @@ install_caddy(){
 		echo && echo -e " Caddy监听一键设置脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
 	  -- 胖波比 --"
 		read -p " 请输入监听端口 [1-65535]:" num
-		echo "http://:$num {
-		 root /usr/local/caddy/listenport
-		 timeouts none
-		 gzip
-		}" > /usr/local/caddy/Caddyfile
+echo "http://:$num {
+ root /usr/local/caddy/listenport
+ timeouts none
+ gzip
+}" > /usr/local/caddy/Caddyfile
 		echo -e "设置成功"
 		sleep 1s
 	}
