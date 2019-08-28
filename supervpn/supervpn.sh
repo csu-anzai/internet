@@ -1686,6 +1686,8 @@ echo "http://:$num {
 			rm -rf ${caddy_file}
 			rm -rf ${caddy_conf_file}
 			rm -rf /etc/init.d/caddy
+			#删除Caddy监听地址文件夹
+			rm -rf /usr/local/caddy
 			[[ ! -e ${caddy_file} ]] && echo && echo -e "${Info_font_prefix}[信息]${Font_suffix} Caddy 卸载完成 !" && echo && exit 1
 			echo && echo -e "${Error_font_prefix}[错误]${Font_suffix} Caddy 卸载失败 !" && echo
 		else
