@@ -1539,6 +1539,7 @@ set_ssh(){
 	#重启SSH防火墙
 	service sshd restart
 	service ssh restart
+	sleep 2s
 	start_menu_main
  }
  
@@ -1576,6 +1577,8 @@ set_root(){
 		release="centos"
 	fi
 	
+	[[ ${release} != "debian" ]] && [[ ${release} != "ubuntu" ]] && [[ ${release} != "centos" ]] && echo -e "${Error} 本脚本不支持当前系统 ${release} !" && exit 1
+	
 	#一键启用root帐号命令
 	if [[ "${release}" == "centos" ]]; then
 	# 修改root 密码
@@ -1597,7 +1600,7 @@ set_root(){
 	service ssh restart
 	fi
 	
-	[[ ${release} != "debian" ]] && [[ ${release} != "ubuntu" ]] && [[ ${release} != "centos" ]] && echo -e "${Error} 本脚本不支持当前系统 ${release} !" && exit 1
+	sleep 2s
 	start_menu_main
 }
 
