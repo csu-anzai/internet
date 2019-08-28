@@ -8,13 +8,17 @@ Debian/Ubuntu
 
 sudo apt-get install wget
 
-### 可能需要装
+可能需要装
 
 ca-certificates python3-pip make curl
 
-#### 修复
+修复
 
 apt --fix-broken install
+
+## 超级Internet一键设置脚本，集成V2Ray，SSR，BBR，Lotserver，SSH端口修改，Root用户改密，VPS系统重装，Nginx，Caddy
+
+sudo su && wget https://raw.githubusercontent.com/AmuyangA/internet/master/supervpn/sv.sh && chmod +x sv.sh && ./sv.sh
 
 ## 设置更改root用户登录密码
 
@@ -66,6 +70,10 @@ rm -rf /opt/svn
 
 rm -f /opt/test.txt
 
-## 超级Internet一键设置脚本，集成V2Ray，SSR，BBR，Lotserver，SSH端口修改，Root用户改密，VPS系统重装，Nginx
+## 如果不能编辑
 
-wget https://raw.githubusercontent.com/AmuyangA/internet/master/supervpn/supervpn.sh && chmod +x supervpn.sh && ./supervpn.sh
+先安装VIM编辑器
+
+install -y vim
+
+alias vi=vim
