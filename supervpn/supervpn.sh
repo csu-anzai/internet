@@ -821,7 +821,7 @@ echo
 	}
 
 	# Initialization step
-	start_menu_caddy(){
+	start_menu_ssr(){
 		echo && echo -e " SSR一键安装脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
 		  -- 胖波比 --
 		
