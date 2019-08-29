@@ -2048,6 +2048,7 @@ EOF
 		systemctl start nginx.service
 		echo -e "${Info}Nginx已开启！1秒后回到管理页"
 		sleep 1s
+		manage_nginx
 	}
 	
 	#配置Nginx
